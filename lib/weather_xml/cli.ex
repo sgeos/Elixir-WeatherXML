@@ -46,8 +46,6 @@ defmodule WeatherXML.CLI do
     xml
   end
 
-  # http://elixirsips.com/episodes/028_parsing_xml.html
-  # http://rustamagasanov.com/blog/2015/10/19/parse-xml-with-elixir-and-xmerl-example/
   def parse(xml, fields) do
     fields
       |> Enum.map(fn key ->
